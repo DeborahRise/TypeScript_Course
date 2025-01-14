@@ -70,3 +70,38 @@ const todoOmit : TodoTypeOmit = {
     // completed: false
     id: 3
 }
+
+// Other utility types include: 
+// Required;
+// Exclude and Extract.These Utility types dont work with Interfaces, Rather with String literals and union  types. They work just like Pick and omit, only on literals. Exclude is like Omit and Extract is like Pick.
+
+// Nonnullable Utility type: ignores all possible null and/or undefined types in a type declaration.
+
+// ReturnType Utility type: think of it as reverse psychology in type creation. 
+
+// type newAssign = {title: string, points: number} This should come first but it is commentaed
+
+const createNewAssign = (title: string, points: number) => {
+    return { title, points}
+}
+
+type newAssign = ReturnType<typeof createNewAssign> // the type is created as a product of what the return type of the function is. What this means is, the return type can be easily changed without causing errors. So the retrun type auto updates too if a function or library module changes.
+
+// Parameters: Similar to ReturnType, where you derive a type from a function's parameters.
+
+type AssignParams = Parameters<typeof createNewAssign> // this auto gives us a type of tuple as seen in line 84
+
+// Awaited Utility Type: Helps us with the ReturnType of a Promise
+
+interface User {
+    name: string;
+    age: number;
+}
+
+const fetchUsers = async(): Promise<User[]> => {
+    return []
+}
+
+type FetchUsersReturnType = ReturnType<typeof fetchUsers> // this returns the Promise of an array of users not the array of users itself. HOWEVER, we want the result not the promise
+
+type FetchUsersReturnType2 = Awaited<ReturnType<typeof fetchUsers>> // This return the actual array of users
