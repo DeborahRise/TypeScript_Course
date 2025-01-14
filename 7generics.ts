@@ -64,6 +64,7 @@ gen_data.getItem(0);
 interface User {
     name: string;
     age: number;
+    
 }
 
 const gen_newUser = new GenDataStore<User>()
