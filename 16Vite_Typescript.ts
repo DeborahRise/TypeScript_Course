@@ -46,3 +46,21 @@
 // set load(): ListItem[] {
 // this._load([list]) = list
 // }
+
+// Something else to note in Html/Java script
+// document.getElementbyId, document.InnerHTML, document.createElement("Input"), or document.createElement("li") etc
+// E.G: const check = document.createElement("Input")
+// Now we can start assign the properties/attributes of the type/interface of the class under which check is declared. or the usual HTML property of a HTML element E.G: Check.id = "something.id," check.type="checkbox", check.checked = "something"
+// To add an eventListener: check.addEventListener("change") => it is like listening for the "onChange value in React"
+// Also in Js to add text content to an element, we go: element.textContent.
+// E.G: button.textContent = "X"
+// you can append elements => li.append(button)
+// other event listeners you can add include
+// button.addEventListener("click", () => {
+// fulllist._removeItem(getItemLength.id)
+// this.render(fulllist)
+// })
+
+// A line of code that ensures the DOM content loads first before the java script interacts is
+// document.addEventListener("DOMContentLoaded", initApp)
+// So we make sure the elements exists before we try to interact with them
