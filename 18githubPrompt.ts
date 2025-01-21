@@ -4,9 +4,10 @@
 // git commit -m "Add singlepageSpare.scss: Created new SCSS file for SingleSparepartPage component with detailed styling for various elements."
 
 
-// modified:   ../16Vite_Typescript.ts
 // modified:   ../17React+Typescript.ts
 
 // Untracked files:
-// (use "git add <file>..." to include in what will be committed)
-// ./
+//   (use "git add <file>..." to include in what will be committed)
+//         ../18githubPrompt.ts
+//         ../2ReactHooks_TypeScript/
+//         ./
