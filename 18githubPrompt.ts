@@ -4,10 +4,13 @@
 // git commit -m "Add singlepageSpare.scss: Created new SCSS file for SingleSparepartPage component with detailed styling for various elements."
 
 
-// modified:   ../17React+Typescript.ts
+// modified:   ../18githubPrompt.ts
+//         modified:   ../3UseReducer_TypeScript/src/App.tsx
+//         deleted:    ../3UseReducer_TypeScript/src/components/ToDoList.jsx
+//         modified:   ../3UseReducer_TypeScript/src/main.tsx
 
 // Untracked files:
 //   (use "git add <file>..." to include in what will be committed)
-//         ../18githubPrompt.ts
-//         ../2ReactHooks_TypeScript/
+//         ../3UseReducer_TypeScript/src/components/ToDoList_Type.tsx
+//         ../3UseReducer_TypeScript/src/components/UseReducer_ToDoList.tsx
 //         ./
