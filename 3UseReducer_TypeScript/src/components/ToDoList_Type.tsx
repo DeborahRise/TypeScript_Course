@@ -48,7 +48,7 @@ const ToDoList_Type = () => {
 
   return (
     <div>
-      <h1>List Of Activities</h1>
+      <h1>TypeScript Todo List </h1>
 
       <div style={{display: "flex", justifyContent: "space-between"}}>
         <input type="text"
