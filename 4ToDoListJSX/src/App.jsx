@@ -8,8 +8,8 @@ function App() {
 
   return (
     <>
-      <ToDoList />
-      <UseReducer_ToDo />
+      <ToDoList/>
+      <UseReducer_ToDo/>
     </>
   )
 }

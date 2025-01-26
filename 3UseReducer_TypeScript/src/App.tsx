@@ -7,9 +7,9 @@ function App() {
 
   return (
     <>
-      <Counter />
-      <ToDoList_Type />
-      <UseReducer_ToDoList />
+      <Counter/>
+      <ToDoList_Type/>
+      <UseReducer_ToDoList/>
      
     </>
   )
